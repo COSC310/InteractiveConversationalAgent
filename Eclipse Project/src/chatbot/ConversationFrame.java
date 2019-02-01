@@ -29,7 +29,7 @@ public class ConversationFrame extends JFrame{
 		public ConversationPanel() {
 			//setBackground(Color.BLACK);
 			try {
-				myImage = ImageIO.read(new File("ÈKanye.jpg")); //Current mistake is here 
+				myImage = ImageIO.read(getClass().getResource("Kanye.jpg")); //Current mistake is here 
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
