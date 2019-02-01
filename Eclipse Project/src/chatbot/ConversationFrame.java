@@ -36,7 +36,7 @@ public class ConversationFrame extends JFrame{
 		}
 		public void paint(Graphics g) {
 			super.paint(g);
-			g.drawImage(myImage, 0, 0, this);
+			g.drawImage(myImage, 0, 0, getWidth(), getHeight(), this);
 			conversation.paint((Graphics2D)g);
 		}
 	}
