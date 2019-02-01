@@ -40,7 +40,7 @@ public class YeBot {
 					}else if(input.toLowerCase().equals("what is your name?")) {
 						input=conversation.response("Kanye! What is your name?");
 					}else {
-						input=conversation.response("You said \"" + input + "\"");
+						input=conversation.response("You said \"" + input + "\" very intereting");
 					}
 				}	
 			
