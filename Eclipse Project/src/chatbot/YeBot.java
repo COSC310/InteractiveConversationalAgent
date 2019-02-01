@@ -1,21 +1,20 @@
 import java.util.*;
 
-package src.chatbot;
+
 
 public class YeBot {
+
+	static Conversation conversation;			
 	
 	private Scanner client = new Scanner(System.in); //change input type if needed
-	
+	/*
 	public void start() {
 		//change to end when gui is closed
 		while(true) {
 			talk();
 		}
-	}
+	}*/
 	
-	public void talk() {
-		static Conversation conversation;			
-		
 		public static void main(String[] args) {
 			String ans;
 			do{								
@@ -109,4 +108,3 @@ public class YeBot {
 		
 		
 	}
-}
