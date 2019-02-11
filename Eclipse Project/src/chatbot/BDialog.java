@@ -1,82 +1,110 @@
 
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.EventQueue;
 
-import javax.swing.JButton;
-import javax.swing.JDialog;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
+import java.awt.Color;
 import javax.swing.JTextField;
+import java.awt.BorderLayout;
+import javax.swing.JButton;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import java.awt.ScrollPane;
+import java.awt.Font;
+import javax.swing.JScrollPane;
+import javax.swing.SwingConstants;
+import javax.swing.JTextArea;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.UIManager;
+import javax.swing.ScrollPaneConstants;
 
 @SuppressWarnings("serial")
-public class BDialog extends JDialog {
-	//
-    private JButton btnAnswer = new JButton("Talk");
-    private JButton btnExit = new JButton("Exit");
-    private JTextField txtTalk = new JTextField(60);
-    private JLabel txtResponse = new JLabel("This is a message");
-    private String result;
-    public BDialog(JFrame frame) {
-        super(frame, true);
-        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        setUndecorated(true);
-        setLayout(new GridLayout(2, 1));
-        getContentPane().setBackground(Color.black);
-        
-        //set font and color
-        Font font = new Font("Arial", Font.BOLD, 20);
-        txtResponse.setFont(font);
-        txtResponse.setForeground(Color.WHITE);
-        txtTalk.setFont(font);
-        btnAnswer.setFont(font);
-        btnExit.setFont(font);
-        
-        JPanel tmpPanel = new JPanel();
-        //tmpPanel.setBackground(Color.black);
-        //if you want reply above text box change "" to txtResponse
-        tmpPanel.setOpaque(false);
-        tmpPanel.add(txtResponse);
-        add(tmpPanel);
-        tmpPanel = new JPanel();
-        //tmpPanel.setBackground(Color.black);
-        tmpPanel.setOpaque(false);
-        tmpPanel.add(txtTalk);
-        tmpPanel.add(btnAnswer);
-        tmpPanel.add(btnExit);
-        add(tmpPanel);
+public class BDialog {
 
-        //Adds listener to buttons in panel pack();
-        MyHandler handler = new MyHandler();
-        btnAnswer.addActionListener(handler);
-        txtTalk.addActionListener(handler);
-        btnExit.addActionListener(handler);
-    }
-    public String showInputDialog(String msg){
-    	txtResponse.setText(msg);
-    	setVisible(true);
-    	return result;
-    }
-    public void showMessageDialog(String msg){
-    	txtResponse.setText(msg);
-    	setVisible(true);
-    }
-    //confirmation that you want to quit (Done)
-    private class MyHandler implements ActionListener{
-		public void actionPerformed(ActionEvent e) {
-			if(e.getSource() == btnExit){
-				if(JOptionPane.showConfirmDialog(null, "Really want to exit?","Confirmation", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION)
-					System.exit(0);
-			}else{
-				result = txtTalk.getText();
-				txtTalk.setText("");
-				setVisible(false);
+	private static JFrame frame;
+	private String result;
+	private JTextArea input;
+	private JButton btnSend;
+	private JScrollPane scrollView;
+	private GroupLayout groupLayout;
+	private static JTextArea chatBox;
+	private String txtResponse;
+
+
+	public BDialog() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setBackground(Color.LIGHT_GRAY);
+		//scroll view for our messages
+		scrollView = new JScrollPane();
+		scrollView.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+		scrollView.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		//sets info for send button
+		btnSend = new JButton("Send");
+		btnSend.setBackground(Color.GRAY);
+		btnSend.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 19));
+
+		//sets text input box
+		input = new JTextArea();
+		input.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 19));
+		groupLayout = new GroupLayout(frame.getContentPane());
+
+		groupLayout.setHorizontalGroup(
+				groupLayout.createParallelGroup(Alignment.LEADING)
+				.addComponent(scrollView, GroupLayout.DEFAULT_SIZE, 837, Short.MAX_VALUE)
+				.addGroup(Alignment.TRAILING, groupLayout.createSequentialGroup()
+						.addComponent(input, GroupLayout.PREFERRED_SIZE, 680, GroupLayout.PREFERRED_SIZE)
+						.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(btnSend, GroupLayout.PREFERRED_SIZE, 160, GroupLayout.PREFERRED_SIZE))
+				);
+		groupLayout.setVerticalGroup(
+				groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGroup(groupLayout.createSequentialGroup()
+						.addComponent(scrollView, GroupLayout.PREFERRED_SIZE, 503, GroupLayout.PREFERRED_SIZE)
+						.addGap(1)
+						.addGroup(groupLayout.createParallelGroup(Alignment.TRAILING, false)
+								.addComponent(btnSend, GroupLayout.PREFERRED_SIZE, 98, GroupLayout.PREFERRED_SIZE)
+								.addComponent(input))
+						.addContainerGap())
+				);
+
+		chatBox = new JTextArea();
+		chatBox.setBackground(Color.LIGHT_GRAY);
+		chatBox.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 19));
+		chatBox.setEditable(false);
+		scrollView.setViewportView(chatBox);
+
+		//action for send button
+		btnSend.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				if (!input.getText().equals("")){
+					result = input.getText();
+					input.setText("");
+					chatBox.setText(chatBox.getText().concat("You: "+result)+"\n\n");
+				}
+				else {
+					//just for testing purposes... could display error here if need be
+					//input.setText("test");
+				}
 			}
-		}
-    }
+		});
+
+		frame.getContentPane().setLayout(groupLayout);
+		frame.setBounds(100, 100, 861, 665);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public static String response(String msg){
+		chatBox.setText(chatBox.getText().concat("Kanye: "+msg)+"\n\n");
+		return msg;
+	}
 }
