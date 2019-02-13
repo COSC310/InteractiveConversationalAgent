@@ -1,0 +1,3 @@
+"?"," question mark "
+"!"," exclamation point "
+"."," period "
