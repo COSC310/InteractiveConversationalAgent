@@ -24,7 +24,7 @@ public class YeBot {
 				String input = null;
 		
 				//	set a default max number of response to 5 currently
-				int maxResponses=5;	
+				int maxResponses=30;	
 				//cycle through a conversation with max responses 
 				for(int i=0;i<maxResponses;i++){	
 					//write code to handle user input
@@ -95,7 +95,7 @@ public class YeBot {
 						input=conversation.response("It's gonna be 2024 now, but when I decide to do it it will be done");
 					}else if((Arrays.asList("what upsets you", "upsets you", "you sad", "you mad").stream().anyMatch(input::contains))) {
 						input=conversation.response("Sometimes I get emotional over fonts");
-					}else if((Arrays.asList("who programmed you", "who created you", "are you a bot").stream().anyMatch(input::contains))) {
+					}else if((Arrays.asList("who programmed you", "chatbot", "who created you", "are you a bot").stream().anyMatch(input::contains))) {
 						input=conversation.response("They will not program me");
 					}else if((Arrays.asList("goodbye", "bye", "goodnight", "ttyl").stream().anyMatch(input::contains))) {
 						input=conversation.response("I don't want to say goodbye to you  So I'll say goodnight to you");
