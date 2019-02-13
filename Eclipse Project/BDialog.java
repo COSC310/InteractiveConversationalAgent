@@ -16,7 +16,7 @@ import javax.swing.JTextField;
 
 @SuppressWarnings("serial")
 public class BDialog extends JDialog {
-	
+	//
     private JButton btnAnswer = new JButton("Talk");
     private JButton btnExit = new JButton("Exit");
     private JTextField txtTalk = new JTextField(60);
