@@ -29,16 +29,17 @@ public class YeBot {
 				for(int i=0;i<maxResponses;i++){	
 					//write code to handle user input
 					//just a default for testing user interface
+			
 					if(i==0 || input==null || input==""){
 						//start the conversation
 						input = conversation.response("Hello");
-					}else if(input.toLowerCase().equals("hi")) {
+					}else if((Arrays.asList("Hello", "Hi")).stream().anyMatch(input::contains)) {
 						input=conversation.response("How are you?");
 					}else if(input.toLowerCase().equals("good. how are you?")) {
 						input=conversation.response("Good");
 					}else if(input.toLowerCase().equals("what is your name?")) {
 						input=conversation.response("The being formally known as Kanye West I am Ye  Who are you?");
-					}else if(input.toLowerCase().equals("My name is Jane")) {
+					}else if(input.toLowerCase().contains("My name is")) {
 						input=conversation.response("Only positive energy");
 					}else if(input.toLowerCase().equals("How old are you?")) {
 						input=conversation.response("41  I miss the old Kanye");
