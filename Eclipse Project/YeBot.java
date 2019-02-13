@@ -10,7 +10,7 @@ public class YeBot {
 			//initialize
 			String dir = new File(".").getAbsolutePath();
 			System.out.println(dir.substring(0,dir.length()-2));
-			MagicBooleans.trace_mode = false;
+			//MagicBooleans.trace_mode = false;
 			Bot yebot = new Bot("YeBot",dir.substring(0,dir.length()-2));
 			yebot.writeAIMLFiles();
 			String ans;
