@@ -6,7 +6,7 @@ import java.awt.FontMetrics;
 import java.awt.Graphics2D;
 
 public class Conversation{
-	public static final int WIDTH = 900, HEIGHT = 500;
+	public static final int WIDTH = 1300, HEIGHT = 730;
 	public String msg = "Hello";
 	private ConversationFrame frame = new ConversationFrame(this, "COSC 310", WIDTH, HEIGHT);
 	private BDialog dialog = new BDialog(frame);

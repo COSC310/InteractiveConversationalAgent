@@ -9,11 +9,10 @@ public class YeBot {
 		public static void main(String[] args) {
 			//initialize
 			String dir = new File(".").getAbsolutePath();
-			System.out.println(dir.substring(0,dir.length()-2)+File.separator+"res");
+			System.out.println(dir.substring(0,dir.length()-2));
 			MagicBooleans.trace_mode = false;
-			Bot yebot = new Bot("YeBot",dir.substring(0,dir.length()-2)+File.separator+"res");
+			Bot yebot = new Bot("YeBot",dir.substring(0,dir.length()-2));
 			yebot.writeAIMLFiles();
-			System.exit(0);
 			String ans;
 			do{								
 			//Reset the conversation
@@ -25,7 +24,7 @@ public class YeBot {
 				while(true){
 					if(input==""||input==null||input.length()<1) {
 						//start conversation
-						input = conversation.response("Hello");
+						input = conversation.response("Ye is in the BUILDING!");
 					}
 					else if(input=="!quit") {
 						break;
