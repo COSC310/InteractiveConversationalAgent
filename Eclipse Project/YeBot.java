@@ -22,6 +22,7 @@ public class YeBot {
 			String input = "test";
 			String output;
 			int i = 1;
+			String quit = "quit";
 			while(input!="quit"){
 				input = null;
 				input = conversation.recieveInput();
@@ -34,7 +35,13 @@ public class YeBot {
 						
 					}
 
-					else if(input=="quit") {
+					else if(input.equalsIgnoreCase(quit)) {
+						try {
+							Thread.sleep(1000);
+							output = conversation.response("GoodBye");
+						} catch (InterruptedException e) {
+							e.printStackTrace();
+						}
 						break;
 					}
 					else {

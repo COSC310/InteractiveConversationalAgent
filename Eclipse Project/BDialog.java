@@ -64,7 +64,7 @@ public class BDialog extends JDialog {
 	 * 
 	 * nothing will happen if the user presses send (or the 'enter' key) but have typed nothing in the input box
 	 * 
-	 * to quit the program simply press the X botton at the top right
+	 * to quit the program simply press the X botton at the top right or type "quit"
 	 */
 	public BDialog() {
 		initialize();
@@ -173,6 +173,11 @@ public class BDialog extends JDialog {
 	public String recieveInput() {
 		String input = result;
 		result = null;
+		try {
+			Thread.sleep(750);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		return input;
 	}
 }
