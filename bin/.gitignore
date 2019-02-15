@@ -1,1 +1,15 @@
 /bin/
+/.classpath
+/.gitignore
+/.project
+/bots/
+/BDialog$MyHandler.class
+/BDialog.class
+/Conversation.class
+/ConversationFrame$ConversationPanel.class
+/ConversationFrame.class
+/YeBot.class
+/lib/
+/res/
+/src/
+/test.class
