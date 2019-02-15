@@ -1,11 +1,14 @@
 import java.util.*;
 import org.alicebot.ab.*;
+
+import com.sun.corba.se.spi.orbutil.closure.Closure;
+
 import java.io.File;
 
 public class YeBot {
 
 	static Conversation conversation;			
-
+	
 	public static void main(String[] args) {
 		//initialize
 		String dir = new File(".").getAbsolutePath();
@@ -22,8 +25,8 @@ public class YeBot {
 			String input = "test";
 			String output;
 			int i = 1;
-			String quit = "quit";
-			while(input!="quit"){
+
+			while(!conversation.isContained(input)){
 				input = null;
 				input = conversation.recieveInput();
 				System.out.println(input);
@@ -34,11 +37,10 @@ public class YeBot {
 						i=0;
 						
 					}
-
-					else if(input.equalsIgnoreCase(quit)) {
+					else if(!conversation.isContained(input)) {
 						try {
+							output = conversation.response(session.multisentenceRespond(input));
 							Thread.sleep(1000);
-							output = conversation.response("GoodBye");
 						} catch (InterruptedException e) {
 							e.printStackTrace();
 						}

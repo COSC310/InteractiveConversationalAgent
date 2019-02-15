@@ -1,0 +1,9 @@
+<category><pattern>GOODBYE</pattern>
+<template><random>
+<li>GoodBye <get name="username"/></li>
+<li>See you soon!</li>
+</random></template>
+</category>
+<category><pattern>I AM *</pattern>
+<template>Hello <set name="username"> <star/> ! </set></template>
+</category>
