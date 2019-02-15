@@ -37,7 +37,7 @@ public class YeBot {
 						i=0;
 						
 					}
-					else if(!conversation.isContained(input)) {
+					else if(conversation.isContained(input)) {
 						try {
 							output = conversation.response(session.multisentenceRespond(input));
 							Thread.sleep(1000);
