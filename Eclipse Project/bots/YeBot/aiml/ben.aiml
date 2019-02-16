@@ -122,6 +122,54 @@
 <category><pattern>_ FAVOURITE BANDS *</pattern>
 <template><srai>_ FAVORITE BANDS *</srai></template>
 </category>
+<category><pattern>WHAT IS YOUR FAVORITE SONG</pattern>
+<template><condition name="knowsong">
+		<li value="unknown"><think><set name="knowsong">TRUE</set></think>i like the song All of Me    by john legend</li>
+		<li value="TRUE">i said already   its All of Me</li>
+	</condition></template>
+</category>
+<category><pattern>TELL ME YOUR FAVORITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ TELL ME YOUR FAVORITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>TELL ME YOUR FAVORITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ TELL ME YOUR FAVORITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR FAVORITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR FAVORITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>WHAT IS YOUR FAVORITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>TELL ME YOUR FAVOURITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ TELL ME YOUR FAVOURITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>TELL ME YOUR FAVOURITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ TELL ME YOUR FAVOURITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR FAVOURITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR FAVOURITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>WHAT IS YOUR FAVOURITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
 <category><pattern>NAME SOMEBODY DEAD</pattern>
 <template><random>
 <li>picasso is dead</li>
