@@ -22,8 +22,8 @@ public class YeBot {
 			String input = "test";
 			String output;
 			int i = 1;
-			String quit = "quit";
-			while(input!="quit"){
+			
+			while(!conversation.isContained(input)){
 				input = null;
 				input = conversation.recieveInput();
 				System.out.println(input);
@@ -35,10 +35,11 @@ public class YeBot {
 						
 					}
 
-					else if(input.equalsIgnoreCase(quit)) {
+					else if(conversation.isContained(input)) {
 						try {
+							Thread.sleep(500);
+							output = conversation.response(session.multisentenceRespond(input));
 							Thread.sleep(1000);
-							output = conversation.response("GoodBye");
 						} catch (InterruptedException e) {
 							e.printStackTrace();
 						}
