@@ -44,9 +44,6 @@
 <category><pattern>I AM FROM *</pattern>
 <template>Is that where you live now?  <think><set name="birthplace"><star/></set></think></template>
 </category>
-<category><pattern>I LIKE *</pattern>
-<template>What do you like most about it? <think><set name="it"><set name="topic"><star/></set></set></think></template>
-</category>
 <category><pattern>I LIKE TO *</pattern>
 <template><think><set name="likes"><star/></set></think>  <random><li>How long have you been doing it?</li><li>Do you get to do it very often?</li><li>Do you think I would like to?</li></random><think><set name="it"><set name="topic"><star/></set></set></think></template>
 </category>

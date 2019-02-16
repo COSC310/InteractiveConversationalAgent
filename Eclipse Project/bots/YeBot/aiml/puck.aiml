@@ -2,16 +2,24 @@
 <aiml>
 <!--  -->
 <category><pattern>I AM *</pattern>
-<template>NICE TO MEET YOU <set name="username"><star/></set></template>
+<template>NICE TO MEET YOU <think><set name="username"><star/></set></think>
+<that>DO YOU LIKE MY MUSIC <set name = "username"> YOU SHOULD LISTEN MORE</set></that></template>
 </category>
 <category>
+<pattern>My NAME IS *</pattern>
+<template>NICE TO MEET YOU <think><set name="username"><star/></set></think>
+<that>DO YOU LIKE MY MUSIC <set name = "username"> YOU SHOULD LISTEN MORE</set></that></template>
+</category>
+<category>
+<pattern>SEE YOU</pattern><pattern>SEE YOU *</pattern>
 <pattern>QUIT</pattern>
-<pattern>GOODBYE</pattern>
-<pattern>GOODBYE *</pattern>
-<pattern>SEE YOU *</pattern>
+<pattern>GOODBYE *</pattern><pattern>GOODBYE *</pattern>
 <template><random>
     <li>GOODBYE <get name="username"/></li>
     <li>SEE YOU SOON! <get name="username"/></li>
 </random></template>
+</category>
+<category>
+
 </category>
 </aiml>
