@@ -1,2 +1,20 @@
+<<<<<<< HEAD
 /.metadata/
 /Eclipse Project/
+=======
+/bin/
+/.classpath
+/.gitignore
+/.project
+/BDialog$1.class
+/BDialog$2.class
+/BDialog$3.class
+/BDialog.class
+/Conversation.class
+/ConversationFrame.class
+/YeBot.class
+/bots/
+/lib/
+/res/
+/test.class
+>>>>>>> 5de02dffab6cbb2008e93f04f6beff24268961c9

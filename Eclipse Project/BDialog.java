@@ -170,7 +170,7 @@ public class BDialog extends JDialog {
 		return msg;
 	}
 	//tells our program what the user entered so it can respond accordingly
-	public String recieveInput() {
+	public String recieveInput() { //nice spelling
 		String input = result;
 		result = null;
 		try {
