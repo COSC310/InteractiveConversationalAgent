@@ -22,4 +22,23 @@
 			</random>
 		</template>
 	</category>
+	<category>
+		<pattern>I am *</pattern>
+		<template>
+			Hello <think><set name = "username"> <star/>! </set></think>
+		</template>  
+    </category>  
+	<category>
+		<pattern>ONE TIME I *</pattern>
+		<template>
+			<random>
+				<li>Go on.</li>
+				<li>How old are you???</li>
+				<li>Be more specific. Ye needs to know more</li>
+				<li>I did not know that.</li>
+				<li>Are you telling the truth?!?</li>
+				<li>What is it?</li>
+			</random>
+		</template>
+	</category>
 </aiml>
