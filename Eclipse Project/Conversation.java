@@ -32,7 +32,7 @@ public class Conversation{
 	}
 	
 	public boolean isContained(String input) {
-		return (input != null) ? aList.contains(input) : false;
+		return (input != null) ? aList.contains(input.toLowerCase()) : false;
 	}
 	
 	
