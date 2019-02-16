@@ -5,15 +5,18 @@
 <template>Hello</template>
 </category>
 <category><pattern>HOW OLD ARE YOU *</pattern>
-<template><srai>WHAT IS YOUR AGE *</srai></template>
-</category>
-<category><pattern>_ WHAT IS YOUR AGE QUESTION MARK</pattern>
 <template><srai>WHAT IS YOUR AGE</srai></template>
 </category>
-<category><pattern>HOW OLD ARE YOU QUESTION MARK</pattern>
+<category><pattern>HOW OLD ARE YOU _ QUESTIONMARK</pattern>
 <template><srai>WHAT IS YOUR AGE</srai></template>
 </category>
-<category><pattern>_ HOW OLD ARE YOU QUESTION MARK</pattern>
+<category><pattern>_ WHAT IS YOUR AGE QUESTIONMARK</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>HOW OLD ARE YOU QUESTIONMARK</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>_ HOW OLD ARE YOU QUESTIONMARK</pattern>
 <template><srai>WHAT IS YOUR AGE</srai></template>
 </category>
 <category><pattern>_ WHAT IS YOUR AGE</pattern>
@@ -26,6 +29,12 @@
 <template><srai>WHAT IS YOUR AGE</srai></template>
 </category>
 <category><pattern>_ HOW OLD ARE YOU *</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR AGE *QUESTIONMARK</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>_ HOW OLD ARE YOU *QUESTIONMARK</pattern>
 <template><srai>WHAT IS YOUR AGE</srai></template>
 </category>
 <category><pattern>WHAT IS YOUR AGE</pattern>

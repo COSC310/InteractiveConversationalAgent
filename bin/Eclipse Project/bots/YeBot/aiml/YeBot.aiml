@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!--  -->
+<category><pattern>HI</pattern>
+<template>Hello</template>
+</category>
+<category><pattern>HOW OLD ARE YOU *</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>HOW OLD ARE YOU _ QUESTIONMARK</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR AGE QUESTIONMARK</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>HOW OLD ARE YOU QUESTIONMARK</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>_ HOW OLD ARE YOU QUESTIONMARK</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR AGE</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>HOW OLD ARE YOU</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR AGE *</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>_ HOW OLD ARE YOU *</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR AGE *QUESTIONMARK</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>_ HOW OLD ARE YOU *QUESTIONMARK</pattern>
+<template><srai>WHAT IS YOUR AGE</srai></template>
+</category>
+<category><pattern>WHAT IS YOUR AGE</pattern>
+<template>im 41   I miss the old Kanye</template>
+</category>
+<category><pattern>*</pattern>
+<template><random>
+<li>wish i could help   i dont know what that means</li>
+<li>you got good vibes   but i dont know what to say to that</li>
+<li>yo man you gotta slow down   maybe try saying that a different way</li>
+</random></template>
+</category>
+</aiml>
