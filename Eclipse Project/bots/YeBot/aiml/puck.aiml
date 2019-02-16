@@ -4,9 +4,10 @@
 <category><pattern>I AM *</pattern>
 <template>NICE TO MEET YOU <set name="username"><star/></set></template>
 </category>
-<category><pattern>GOODBYE *</pattern>
-<pattern>GOODBYE</pattern>
+<category>
 <pattern>QUIT</pattern>
+<pattern>GOODBYE</pattern>
+<pattern>GOODBYE *</pattern>
 <pattern>SEE YOU *</pattern>
 <template><random>
     <li>GOODBYE <get name="username"/></li>
