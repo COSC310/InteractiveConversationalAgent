@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<!--  -->
+	<category>
+		<pattern>WHAT IS THE MEANING OF LIFE</pattern>
+		<template>42</template>
+	</category>	
+	<category>
+		<pattern>I LIKE *</pattern>
+		<template>
+			<random>
+				<li>I too like <star/></li>
+				<li>I do not like<star/></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO YOU KNOW WHO * IS</pattern>
+		<template>
+			<random>
+				<li>I do not know who <star/></li>
+				<li>We are tight me and <star/></li>
+			</random>
+		</template>
+	</category>
 </aiml>
