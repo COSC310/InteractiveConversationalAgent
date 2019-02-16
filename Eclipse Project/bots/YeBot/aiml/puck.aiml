@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!--  -->
+<category><pattern>I AM *</pattern>
+<template>NICE TO MEET YOU <set name="username"><star/></set></template>
+</category>
+<category><pattern>GOODBYE *</pattern>
+<template><random>
+    <li>GOODBYE <get name="username"/></li>
+    <li>SEE YOU SOON! <get name="username"/></li>
+</random></template>
+</category>
+</aiml>
