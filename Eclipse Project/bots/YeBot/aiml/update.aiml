@@ -5,7 +5,11 @@
 <template>S.U.P.E.R. AIML Bot version 0.0.4</template>
 </category>
 <category><pattern>BUILD</pattern>
+<<<<<<< HEAD
 <template>Fri Feb 15 19:23:46 PST 2019</template>
+=======
+<template>Fri Feb 15 17:23:42 PST 2019</template>
+>>>>>>> 328a62e9df8d388aa1d230942333415048d0e52b
 </category>
 <category><pattern>DELEVLOPMENT ENVIRONMENT</pattern>
 <template>Program AB 0.0.4.2 beta -- AI Foundation Reference AIML 2.0 implementation</template>
