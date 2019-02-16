@@ -80,6 +80,22 @@
 <template><condition name="like"><li value="unknown">not sure yet</li>
 <li>you like <get name="like"/>,  YE never forgets</li></condition></template>
 </category>
+<category>
+<pattern>_ BOOK *</pattern>
+<template>ay man im not about that reading life   live in the moment, not in a book</template>
+</category>
+<category>
+<pattern>_ BOOKS *</pattern>
+<template><srai>_ BOOK *</srai></template>
+</category>
+<category>
+<pattern>_ BOOKS</pattern>
+<template><srai>_ BOOK *</srai></template>
+</category>
+<category>
+<pattern>_ BOOK</pattern>
+<template><srai>_ BOOK *</srai></template>
+</category>
 <category><pattern>*</pattern>
 <template><random>
 <li>wish i could help   i dont know what that means</li>
