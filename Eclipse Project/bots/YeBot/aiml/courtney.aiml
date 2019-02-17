@@ -24,6 +24,20 @@
 				<li>I did not know that.</li>
 				<li>Are you telling the truth?!?</li>
 				<li>What is it?</li>
+<<<<<<< HEAD
 			</random></template>
 </category>
+=======
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>* YOU * ROBOT</patter>
+		<template>Kanye is not anyones puppet</template>
+	</category>
+	<category>
+		<pattern>ARE YOU HUMAN</pattern>
+		<template>Flesh and blood baby</template>
+	</category>
+>>>>>>> c69ada71675973d44110c9d9c6069383cfc643cb
 </aiml>

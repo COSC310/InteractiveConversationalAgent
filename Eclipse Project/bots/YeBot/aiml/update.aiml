@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 <!--  -->
-<category><pattern>VERSION</pattern>
-<template>S.U.P.E.R. AIML Bot version 0.0.4</template>
-</category>
 <category><pattern>BUILD</pattern>
+<<<<<<< HEAD
 <template>Sun Feb 17 11:06:55 PST 2019</template>
+=======
+<template>Sat Feb 16 10:59:13 PST 2019</template>
+>>>>>>> c69ada71675973d44110c9d9c6069383cfc643cb
 </category>
 <category><pattern>DELEVLOPMENT ENVIRONMENT</pattern>
 <template>Program AB 0.0.4.2 beta -- AI Foundation Reference AIML 2.0 implementation</template>

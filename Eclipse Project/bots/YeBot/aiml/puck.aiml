@@ -4,6 +4,7 @@
 <category><pattern>I AM *</pattern>
 <template><srai>MY NAME IS *</srai></template>
 </category>
+<<<<<<< HEAD
 <category><pattern>_ I AM *</pattern>
 <template><srai>MY NAME IS *</srai></template>
 </category>
@@ -60,6 +61,14 @@
 <li>SEE YOU SOON!</li>
 </random></condition>
 <random>
+=======
+<<<<<<< HEAD
+<category><pattern>GOODBYE *</pattern>
+=======
+<category><pattern>SEE YOU *</pattern>
+>>>>>>> 5de02dffab6cbb2008e93f04f6beff24268961c9
+<template><random>
+>>>>>>> c69ada71675973d44110c9d9c6069383cfc643cb
     <li>GOODBYE <get name="username"/></li>
     <li>SEE YOU SOON! <get name="username"/></li>
 </random></template>
