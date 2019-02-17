@@ -183,6 +183,7 @@
 <li>steve jobs is dead</li>
 </random></template>
 </category>
+<<<<<<< HEAD
 <category><pattern>*</pattern>
 <template><random>
 <li>wish i could help   i dont know what that means</li>
@@ -191,4 +192,6 @@
 </random></template>
 </category>
 >>>>>>> 5de02dffab6cbb2008e93f04f6beff24268961c9
+=======
+>>>>>>> puck-test
 </aiml>

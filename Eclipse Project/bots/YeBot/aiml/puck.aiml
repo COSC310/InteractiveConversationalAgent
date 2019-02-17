@@ -2,15 +2,82 @@
 <aiml>
 <!--  -->
 <category><pattern>I AM *</pattern>
+<<<<<<< HEAD
 <template>NICE TO MEET YOU <think><set name="username"><star/></set></think>
 <that>DO YOU LIKE MY MUSIC <set name="username"> YOU SHOULD LISTEN MORE</set></that></template>
 </category>
 <category><pattern>MY NAME IS *</pattern>
 <template>NICE TO MEET YOU <think><set name="username"><star/></set></think>
 <that>DO YOU LIKE MY MUSIC <set name="username"> YOU SHOULD LISTEN MORE</set></that></template>
+=======
+<template><srai>MY NAME IS *</srai></template>
+>>>>>>> puck-test
+</category>
+<<<<<<< HEAD
+<category><pattern>_ I AM *</pattern>
+<template><srai>MY NAME IS *</srai></template>
+</category>
+<category><pattern>_ MY NAME IS *</pattern>
+<template><srai>MY NAME IS *</srai></template>
+</category>
+<category><pattern>MY NAME IS *</pattern>
+<template><think><set name="username"><star/></set></think>
+<random>
+<li>NICE TO MEET YOU </li>
+<li>HOW ARE YOU DOING </li>
+<li>HOW ARE YOU </li>
+<li>HOW IS IT GOING </li>
+<li>WHAT IS UP </li>
+</random></template>
+</category>
+<category><pattern>GOOD *</pattern>
+<template><srai>GOOD</srai></template>
+</category>
+<category><pattern>GOOD</pattern>
+<template><condition name="username">
+<li value="unknown">THAT IS GREAT</li>
+<li>THAT IS GREAT <get name="username"/></li></condition></template>
+</category>
+
+<category><pattern>WHO AM I *</pattern>
+<template><srai>WHAT IS MY NAME *</srai></template>
+</category>
+<category><pattern>WHAT IS MY NAME *</pattern>
+<template>YOU ARE <get name="username"/></template>
+</category>
+<category><pattern>THE SKY IS BLUE</pattern>
+<template>I will remember that the sky is blue
+<learn>
+<category>
+<pattern>WHAT COLOR IS THE SKY</pattern>
+<template>The sky is blue</template>
+</category>
+</learn></template>
+</category>
+<category><pattern>GOODBYE *</pattern>
+<template><srai>GOODBYE</srai></template>
 </category>
 <category><pattern>SEE YOU *</pattern>
+<template><srai>GOODBYE</srai></template>
+</category>
+<category><pattern>SEE YOU</pattern>
+<template><srai>GOODBYE</srai></template>
+</category>
+<category><pattern>GOODBYE</pattern>
+<template><condition name="username" value="unknown">
+<random>
+<li>GOODBYE</li>
+<li>SEE YOU SOON!</li>
+</random></condition>
+<random>
+=======
+<<<<<<< HEAD
+<category><pattern>GOODBYE *</pattern>
+=======
+<category><pattern>SEE YOU *</pattern>
+>>>>>>> 5de02dffab6cbb2008e93f04f6beff24268961c9
 <template><random>
+>>>>>>> c69ada71675973d44110c9d9c6069383cfc643cb
     <li>GOODBYE <get name="username"/></li>
     <li>SEE YOU SOON! <get name="username"/></li>
 </random></template>
