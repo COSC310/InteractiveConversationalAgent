@@ -1,7 +1,9 @@
 import java.util.*;
 import org.alicebot.ab.*;
 import java.io.File;
-
+/**
+ * YeBot is the main class where the conversation is held.
+ */
 public class YeBot {
 
 	static Conversation conversation;			

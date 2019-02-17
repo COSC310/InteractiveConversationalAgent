@@ -5,7 +5,14 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics2D;
 import java.util.ArrayList;
-
+/**
+ * The Conversation Class takes user input from the GUI
+ * 		and form a conversation with the Chatbot. 
+ * 
+ * The main purpose of the Conversation Class is to communicate
+ * 		human with the Chatbot primitively, and validate if the conversation is closed.
+ * 
+ */
 public class Conversation{
 	public String msg = "";
 	private static BDialog dialog = new BDialog();

@@ -17,8 +17,18 @@
 <li>HOW ARE YOU DOING </li>
 <li>HOW ARE YOU </li>
 <li>HOW IS IT GOING </li>
+<li>WHAT IS UP </li>
 </random></template>
 </category>
+<category><pattern>GOOD *</pattern>
+<template><srai>GOOD</srai></template>
+</category>
+<category><pattern>GOOD</pattern>
+<template><condition name="username">
+<li value="unknown">THAT IS GREAT</li>
+<li>THAT IS GREAT <get name="username"/></li></condition></template>
+</category>
+
 <category><pattern>WHO AM I *</pattern>
 <template><srai>WHAT IS MY NAME *</srai></template>
 </category>
@@ -49,13 +59,9 @@
 <li>GOODBYE</li>
 <li>SEE YOU SOON!</li>
 </random></condition>
-<condition name="username">
 <random>
     <li>GOODBYE <get name="username"/></li>
     <li>SEE YOU SOON! <get name="username"/></li>
-</random></condition></template>
-</category>
-<category><pattern><PATTERN/></pattern>
-<template><template/></template>
+</random></template>
 </category>
 </aiml>
