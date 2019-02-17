@@ -10,7 +10,7 @@
 <category><pattern>HOW OLD ARE YOU _ QUESTIONMARK</pattern>
 <template><srai>WHAT IS YOUR AGE</srai></template>
 </category>
-<category><pattern>_ WHAT IS YOUR AGE QUESTIONMARK</pattern>
+<category><pattern>WHAT IS YOUR AGE *</pattern>
 <template><srai>WHAT IS YOUR AGE</srai></template>
 </category>
 <category><pattern>HOW OLD ARE YOU QUESTIONMARK</pattern>
@@ -38,7 +38,9 @@
 <template><srai>WHAT IS YOUR AGE</srai></template>
 </category>
 <category><pattern>WHAT IS YOUR AGE</pattern>
-<template>im 41   I miss the old Kanye</template>
+<template><condition name="knowage">
+	<li value="unknown"><think><set name="knowage">TRUE</set></think>im 41   I miss the old Kanye</li>
+	<li value="TRUE">man i already told you    im 41</li></condition></template>
 </category>
 <category><pattern>WHAT DO YOU LIKE *</pattern>
 <template><srai>HOBBIES</srai></template>
@@ -81,7 +83,13 @@
 <li>you like <get name="like"/>,  YE never forgets</li></condition></template>
 </category>
 <category><pattern>_ BOOK *</pattern>
+<<<<<<< HEAD
 <template>ay man im not about that reading life   live in the moment, not in a book</template>
+=======
+<template><condition name="knowbooks">
+<li value="unknown"><think><set name="knowbooks">TRUE</set></think>ay man im not about that reading life   live in the moment, not in a book</li>
+<li value="TRUE">please stop bringing up books man    i dont like em</li></condition></template>
+>>>>>>> 5de02dffab6cbb2008e93f04f6beff24268961c9
 </category>
 <category><pattern>_ BOOKS *</pattern>
 <template><srai>_ BOOK *</srai></template>
@@ -92,4 +100,95 @@
 <category><pattern>_ BOOK</pattern>
 <template><srai>_ BOOK *</srai></template>
 </category>
+<<<<<<< HEAD
+=======
+<category><pattern>_ FAVORITE BANDS *</pattern>
+<template><condition name="knowbands">
+<li value="unknown"><think><set name="knowbands">TRUE</set></think>i like the tribe, radiohead    modest mouse and the killers are good too</li>
+<li value="TRUE">think i already said this   but i like radiohead    tribe    modest mouse and the killers</li></condition></template>
+</category>
+<category><pattern>_ FAVORITE BAND *</pattern>
+<template><srai>_ FAVORITE BANDS *</srai></template>
+</category>
+<category><pattern>_ FAVORITE BAND</pattern>
+<template><srai>_ FAVORITE BANDS *</srai></template>
+</category>
+<category><pattern>_ FAVORITE BANDS</pattern>
+<template><srai>_ FAVORITE BANDS *</srai></template>
+</category>
+<category><pattern>_ FAVOURITE BAND *</pattern>
+<template><srai>_ FAVORITE BANDS *</srai></template>
+</category>
+<category><pattern>_ FAVOURITE BAND</pattern>
+<template><srai>_ FAVORITE BANDS *</srai></template>
+</category>
+<category><pattern>_ FAVOURITE BANDS</pattern>
+<template><srai>_ FAVORITE BANDS *</srai></template>
+</category>
+<category><pattern>_ FAVOURITE BANDS *</pattern>
+<template><srai>_ FAVORITE BANDS *</srai></template>
+</category>
+<category><pattern>WHAT IS YOUR FAVORITE SONG</pattern>
+<template><condition name="knowsong">
+		<li value="unknown"><think><set name="knowsong">TRUE</set></think>i like the song All of Me    by john legend</li>
+		<li value="TRUE">i said already   its All of Me</li>
+	</condition></template>
+</category>
+<category><pattern>TELL ME YOUR FAVORITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ TELL ME YOUR FAVORITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>TELL ME YOUR FAVORITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ TELL ME YOUR FAVORITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR FAVORITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR FAVORITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>WHAT IS YOUR FAVORITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>TELL ME YOUR FAVOURITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ TELL ME YOUR FAVOURITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>TELL ME YOUR FAVOURITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ TELL ME YOUR FAVOURITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR FAVOURITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>_ WHAT IS YOUR FAVOURITE SONG</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>WHAT IS YOUR FAVOURITE SONG *</pattern>
+<template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
+</category>
+<category><pattern>NAME SOMEBODY DEAD</pattern>
+<template><random>
+<li>picasso is dead</li>
+<li>walt disney is dead</li>
+<li>steve jobs is dead</li>
+</random></template>
+</category>
+<category><pattern>*</pattern>
+<template><random>
+<li>wish i could help   i dont know what that means</li>
+<li>you got good vibes   but i dont know what to say to that</li>
+<li>yo man you gotta slow down   maybe try saying that a different way</li>
+</random></template>
+</category>
+>>>>>>> 5de02dffab6cbb2008e93f04f6beff24268961c9
 </aiml>
