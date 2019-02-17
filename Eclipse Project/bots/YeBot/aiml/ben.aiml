@@ -83,13 +83,9 @@
 <li>you like <get name="like"/>,  YE never forgets</li></condition></template>
 </category>
 <category><pattern>_ BOOK *</pattern>
-<<<<<<< HEAD
-<template>ay man im not about that reading life   live in the moment, not in a book</template>
-=======
 <template><condition name="knowbooks">
 <li value="unknown"><think><set name="knowbooks">TRUE</set></think>ay man im not about that reading life   live in the moment, not in a book</li>
 <li value="TRUE">please stop bringing up books man    i dont like em</li></condition></template>
->>>>>>> 5de02dffab6cbb2008e93f04f6beff24268961c9
 </category>
 <category><pattern>_ BOOKS *</pattern>
 <template><srai>_ BOOK *</srai></template>
@@ -100,8 +96,6 @@
 <category><pattern>_ BOOK</pattern>
 <template><srai>_ BOOK *</srai></template>
 </category>
-<<<<<<< HEAD
-=======
 <category><pattern>_ FAVORITE BANDS *</pattern>
 <template><condition name="knowbands">
 <li value="unknown"><think><set name="knowbands">TRUE</set></think>i like the tribe, radiohead    modest mouse and the killers are good too</li>
@@ -183,7 +177,6 @@
 <li>steve jobs is dead</li>
 </random></template>
 </category>
-<<<<<<< HEAD
 <category><pattern>*</pattern>
 <template><random>
 <li>wish i could help   i dont know what that means</li>
@@ -191,7 +184,4 @@
 <li>yo man you gotta slow down   maybe try saying that a different way</li>
 </random></template>
 </category>
->>>>>>> 5de02dffab6cbb2008e93f04f6beff24268961c9
-=======
->>>>>>> puck-test
 </aiml>

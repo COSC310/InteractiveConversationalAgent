@@ -2,18 +2,7 @@
 <aiml>
 <!--  -->
 <category><pattern>BUILD</pattern>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<template>Fri Feb 15 22:06:20 PST 2019</template>
-=======
-<template>Sat Feb 16 10:59:13 PST 2019</template>
->>>>>>> 5de02dffab6cbb2008e93f04f6beff24268961c9
-=======
-<template>Sun Feb 17 11:06:55 PST 2019</template>
-=======
-<template>Sat Feb 16 10:59:13 PST 2019</template>
->>>>>>> c69ada71675973d44110c9d9c6069383cfc643cb
->>>>>>> puck-test
+<template>Sun Feb 17 13:00:43 PST 2019</template>
 </category>
 <category><pattern>DELEVLOPMENT ENVIRONMENT</pattern>
 <template>Program AB 0.0.4.2 beta -- AI Foundation Reference AIML 2.0 implementation</template>
