@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+<!--  -->
 	<category>
 		<pattern>WHAT IS THE MEANING OF LIFE</pattern>
 		<template>42</template>
@@ -66,7 +67,7 @@
 		<template>Kanye is not anyones puppet</template>
 	</category>
 	<category>
-		<pattern>ARE YOU HUMAN</pattern>
+		<pattern>ARE YOU HUMAN*</pattern>
 		<template>Flesh and blood baby</template>
 	</category>
 </aiml>
