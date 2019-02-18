@@ -37,7 +37,7 @@ public class Conversation{
 		String result = dialog.recieveInput();
 		return result;
 	}
-	
+	//verify if the user input contains a exit prompt
 	public boolean isContained(String input) {
 		return (input != null) ? aList.contains(input.toLowerCase()) : false;
 	}
