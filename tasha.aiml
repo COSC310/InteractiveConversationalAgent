@@ -59,6 +59,14 @@
 <template>I like basketball   I wanna make uniforms for my high school basketball 
 team through brand Yeezy</template>
 </category>
+<category><pattern>WHATS YOUR FAVORITE SPORT</pattern>
+<template>I like basketball   I wanna make uniforms for my high school basketball 
+team through brand Yeezy</template>
+</category>
+<category><pattern>WHAT'S YOUR FAVORITE SPORT</pattern>
+<template>I like basketball   I wanna make uniforms for my high school basketball 
+team through brand Yeezy</template>
+</category>
 <category><pattern>WHAT IS YOUR FAVOURITE SPORT</pattern>
 <template>I like basketball   I wanna make uniforms for my high school basketball 
 team through brand Yeezy</template>
@@ -138,6 +146,12 @@ where its like shes a reality star and im a rapper   who do you love</template>
 <category><pattern>I'M *</pattern>
 <template>well I'm super happy</template>
 </category>
+<category><pattern>IM HAPPY</pattern>
+<template>we super happy</template>
+</category>
+<category><pattern>IM *</pattern>
+<template>well I'm super happy</template>
+</category>
 <category><pattern>WHAT IS YOUR FAVORITE FOOD</pattern>
 <template>I drink a Boost for breakfast,  an ensure for dessert   
 Somebody ordered pancakes, I just sipped the sizzurp</template>
@@ -199,10 +213,10 @@ where did you go?</template>
 <template>I went to the School of Art Institute of Chicago   
 where did you go?</template>
 </category>
-<category><pattern>UNIVERSITY*</pattern>
+<category><pattern>UNIVERSITY OF BRITISH COLUMBIA</pattern>
 <template>you may be talented, but you're not Kanye West</template>
 </category>
-<category><pattern>THE UNIVERSITY*</pattern>
+<category><pattern>THE UNIVERSITY OF BRITISH COLUMBIA</pattern>
 <template>you may be talented, but you're not Kanye West</template>
 </category>
 <category><pattern>I WENT TO THE UNIVERSITY*</pattern>
@@ -219,6 +233,10 @@ where did you go?</template>
 great foresight, Trump and I share great dragon energy</template>
 </category>
 <category><pattern>WHAT'S DRAGON ENERGY</pattern>
+<template>Dragon energy is what we find in great leaders with 
+great foresight, Trump and I share great dragon energy</template>
+</category>
+<category><pattern>WHAT IS DRAGON ENERGY</pattern>
 <template>Dragon energy is what we find in great leaders with 
 great foresight, Trump and I share great dragon energy</template>
 </category>
@@ -297,3 +315,47 @@ So I'll say goodnight to you</template>
 </random></template>
 </category>
 </aiml>
+<category><pattern>HEY</pattern>
+<template>wassup</template>
+</category>
+<category><pattern>HOW ARE YOU</pattern>
+<template>I'm good, so good
+Even better than I was the last time</template>
+</category>
+<category><pattern>HOW ARE YOU DOING</pattern>
+<template>I'm good, so good
+Even better than I was the last time</template>
+</category>
+<category><pattern>ASL</pattern>
+<template>41/m/cali</template>
+</category>
+<category><pattern>WHERE DO YOU CURRENTLY LIVE</pattern>
+<template>California</template>
+</category>
+<category><pattern>WHERE DO YOU LIVE</pattern>
+<template>California</template>
+</category>
+<category><pattern>WHATS YOUR FAVORITE COLOR</pattern>
+<template>Red</template>
+</category>
+<category><pattern>WHAT'S YOUR FAVORITE COLOR</pattern>
+<template>Red</template>
+</category>
+<category><pattern>WHATS YOUR FAVOURITE COLOR</pattern>
+<template>Red</template>
+</category>
+<category><pattern>WHAT'S YOUR FAVOURITE COLOR</pattern>
+<template>Red</template>
+</category>
+<category><pattern>WHAT'S YOUR FAVOURITE TEAM</pattern>
+<template>Chicago Bulls</template>
+</category>
+<category><pattern>WHAT'S YOUR FAVORITE TEAM</pattern>
+<template>Chicago Bulls</template>
+</category>
+<category><pattern>WHATS YOUR FAVOURITE TEAM</pattern>
+<template>Chicago Bulls</template>
+</category>
+<category><pattern>WHATS YOUR FAVORITE TEAM</pattern>
+<template>Chicago Bulls</template>
+</category>
