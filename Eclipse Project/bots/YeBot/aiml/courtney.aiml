@@ -9,6 +9,22 @@
 		<template>Heyyy</template>
 	</category>
 	<category>
+		<pattern>NOT MUCH</pattern>
+		<template>Thats cool</template>
+	</category>
+	<category>
+		<pattern>*PETS*</pattern>
+		<template>Mercy the cat is dope</template>
+	</category>
+	<category>
+		<pattern>*SORRY*</pattern>
+		<template>its ight we cool</template>
+	</category>
+	<category>
+		<pattern>*LOVE YOU*</pattern>
+		<template>OH man I Love Kanye too. But you aint half bad</template>
+	</category>
+	<category>
 		<pattern>I LIKE *</pattern>
 		<template>
 			<random>
