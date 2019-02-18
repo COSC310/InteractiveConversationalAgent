@@ -186,7 +186,7 @@
 <template><srai>I HATE YOU</srai></template>
 </category>
 <category><pattern>DO YOU _ DRUGS</pattern>
-<template>I’m drug free and my spirit is connected. No weapon formed against us shall prosper</template>
+<template>Im drug free and my spirit is connected. No weapon formed against us shall prosper</template>
 </category>
 <category><pattern>DO YOU _ DRUGS *</pattern>
 <template><srai>DO YOU _ DRUGS</srai></template>
