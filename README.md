@@ -11,9 +11,10 @@ The Interactive Conversational Agent allows an individual to hold a conversation
 * YeBot: YeBot is the main class for the interaction between a user and the chatbot. 
 
 ## How to Compile and Run the Code
-**Enter the below into the cmd line:**
+**Enter the below into the cmd line :**
 * javac BDialog.java Conversation.java YeBot.java java YeBot
 
+**Or run yebot.java**
 
 ## Built With
 
