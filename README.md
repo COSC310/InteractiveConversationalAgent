@@ -5,15 +5,15 @@ The Interactive Conversational Agent allows an individual to hold a conversation
 ## Class Organization
 
 **Breakdown of the classes:**
-BDialog: This class is responsible to create a Graphical User Interface for the conversation between the user and the Chatbot. 
-Conversation: This class is responsible to communicate and transfer user inputs and chatbot outputs. 
-YeBot: YeBot is the main class for the interaction between a user and the chatbot. 
+* BDialog: This class is responsible to create a Graphical User Interface for the conversation between the user and the Chatbot. 
+* Conversation: This class is responsible to communicate and transfer user inputs and chatbot outputs. 
+* YeBot: YeBot is the main class for the interaction between a user and the chatbot. 
 
 ## How to Compile and Run the Code
-javac BDialog.java 
-Conversation.java 
-YeBot.java
-java YeBot
+* javac BDialog.java 
+* Conversation.java 
+* YeBot.java
+* java YeBot
 
 
 ## Built With
