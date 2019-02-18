@@ -10,15 +10,6 @@
 <category><pattern>_ MY NAME IS *</pattern>
 <template><srai>MY NAME IS *</srai></template>
 </category>
-<category><pattern>MY NAME IS *</pattern>
-<template><think><set name="username"><star/></set></think>
-<random>
-<li>NICE TO MEET YOU </li>
-<li>HOW ARE YOU DOING </li>
-<li>HOW ARE YOU </li>
-<li>HOW IS IT GOING </li>
-</random></template>
-</category>
 <category><pattern>GOOD *</pattern>
 <template><srai>GOOD</srai></template>
 </category>
@@ -41,12 +32,5 @@
 </category>
 <category><pattern>SEE YOU</pattern>
 <template><srai>GOODBYE</srai></template>
-</category>
-<category><pattern>GOODBYE</pattern>
-<template><condition name="username" value="unknown">
-<random>
-<li>GOODBYE</li>
-<li>SEE YOU SOON!</li>
-</random></condition></template>
 </category>
 </aiml>
