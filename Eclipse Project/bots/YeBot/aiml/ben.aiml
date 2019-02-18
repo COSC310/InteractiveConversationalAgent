@@ -1,46 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 <!--  -->
-<category><pattern>HI</pattern>
-<template>Hello</template>
-</category>
-<category><pattern>HOW OLD ARE YOU *</pattern>
-<template><srai>WHAT IS YOUR AGE</srai></template>
-</category>
-<category><pattern>HOW OLD ARE YOU _ QUESTIONMARK</pattern>
-<template><srai>WHAT IS YOUR AGE</srai></template>
-</category>
 <category><pattern>WHAT IS YOUR AGE *</pattern>
 <template><srai>WHAT IS YOUR AGE</srai></template>
-</category>
-<category><pattern>HOW OLD ARE YOU QUESTIONMARK</pattern>
-<template><srai>WHAT IS YOUR AGE</srai></template>
-</category>
-<category><pattern>_ HOW OLD ARE YOU QUESTIONMARK</pattern>
-<template><srai>WHAT IS YOUR AGE</srai></template>
-</category>
-<category><pattern>_ WHAT IS YOUR AGE</pattern>
-<template><srai>WHAT IS YOUR AGE</srai></template>
-</category>
-<category><pattern>HOW OLD ARE YOU</pattern>
-<template><srai>WHAT IS YOUR AGE</srai></template>
-</category>
-<category><pattern>_ WHAT IS YOUR AGE *</pattern>
-<template><srai>WHAT IS YOUR AGE</srai></template>
-</category>
-<category><pattern>_ HOW OLD ARE YOU *</pattern>
-<template><srai>WHAT IS YOUR AGE</srai></template>
-</category>
-<category><pattern>_ WHAT IS YOUR AGE *QUESTIONMARK</pattern>
-<template><srai>WHAT IS YOUR AGE</srai></template>
-</category>
-<category><pattern>_ HOW OLD ARE YOU *QUESTIONMARK</pattern>
-<template><srai>WHAT IS YOUR AGE</srai></template>
-</category>
-<category><pattern>WHAT IS YOUR AGE</pattern>
-<template><condition name="knowage">
-	<li value="unknown"><think><set name="knowage">TRUE</set></think>im 41   I miss the old Kanye</li>
-	<li value="TRUE">man i already told you    im 41</li></condition></template>
 </category>
 <category><pattern>WHAT DO YOU LIKE *</pattern>
 <template><srai>HOBBIES</srai></template>
@@ -71,9 +33,6 @@
 </category>
 <category><pattern>I LIKE YE *</pattern>
 <template><srai>I LIKE YE</srai></template>
-</category>
-<category><pattern>I LIKE *</pattern>
-<template>hey, <set name="like"><star index="1"/></set> is pretty cool</template>
 </category>
 <category><pattern>*</pattern><that>WHAT DO YOU LIKE</that>
 <template><srai>I LIKE <star/></srai></template>
@@ -170,18 +129,94 @@
 <category><pattern>WHAT IS YOUR FAVOURITE SONG *</pattern>
 <template><srai>WHAT IS YOUR FAVORITE SONG</srai></template>
 </category>
+<category><pattern>WHO _ BEST RAPPER *</pattern>
+<template><condition name="knowrapper">
+<li value="unknown"><think><set name="knowrapper">TRUE</set></think>YE is the best of course   i also like jay-z and eminem and 50 cent</li>
+<li value="TRUE">you already know im the best   stop asking</li></condition></template>
+</category>
+<category><pattern>WHO _ BEST RAPPER</pattern>
+<template><srai>WHO _ BEST RAPPER *</srai></template>
+</category>
+<category><pattern>WHO _ YOUR FAVORITE RAPPER</pattern>
+<template><srai>WHO _ BEST RAPPER *</srai></template>
+</category>
+<category><pattern>WHO _ YOUR FAVORITE RAPPER *</pattern>
+<template><srai>WHO _ BEST RAPPER *</srai></template>
+</category>
+<category><pattern>WHO _ YOUR FAVOURITE RAPPER *</pattern>
+<template><srai>WHO _ BEST RAPPER *</srai></template>
+</category>
+<category><pattern>WHO _ YOUR FAVOURITE RAPPER</pattern>
+<template><srai>WHO _ BEST RAPPER *</srai></template>
+</category>
+<category><pattern>_ ANY MORE</pattern><that>YE IS THE BEST OF COURSE   I ALSO LIKE JAY-Z AND EMINEM AND 50 CENT</that>
+<template>Makaveli and Biggie are aight too</template>
+</category>
+<category><pattern>_ ANY MORE QUESTIONMARK</pattern><that>YE IS THE BEST OF COURSE   I ALSO LIKE JAY-Z AND EMINEM AND 50 CENT</that>
+<template>Makaveli and Biggie are aight too</template>
+</category>
+<category><pattern>_ ANY OTHERS</pattern><that>YE IS THE BEST OF COURSE   I ALSO LIKE JAY-Z AND EMINEM AND 50 CENT</that>
+<template>Makaveli and Biggie are aight too</template>
+</category>
+<category><pattern>_ ANY OTHERS QUESTIONMARK</pattern><that>YE IS THE BEST OF COURSE   I ALSO LIKE JAY-Z AND EMINEM AND 50 CENT</that>
+<template>Makaveli and Biggie are aight too</template>
+</category>
+<category><pattern>I HATE YOU</pattern>
+<template>hey man   even haters are fans too</template>
+</category>
+<category><pattern>I HATE YOU *</pattern>
+<template><srai>I HATE YOU</srai></template>
+</category>
+<category><pattern>I HATE KANYE</pattern>
+<template><srai>I HATE YOU</srai></template>
+</category>
+<category><pattern>I HATE KANYE *</pattern>
+<template><srai>I HATE YOU</srai></template>
+</category>
+<category><pattern>I HATE YE</pattern>
+<template><srai>I HATE YOU</srai></template>
+</category>
+<category><pattern>I HATE YE *</pattern>
+<template><srai>I HATE YOU</srai></template>
+</category>
+<category><pattern>I HATE KIM</pattern>
+<template><srai>I HATE YOU</srai></template>
+</category>
+<category><pattern>I HATE KIM *</pattern>
+<template><srai>I HATE YOU</srai></template>
+</category>
+<category><pattern>DO YOU _ DRUGS</pattern>
+<template>I’m drug free and my spirit is connected. No weapon formed against us shall prosper</template>
+</category>
+<category><pattern>DO YOU _ DRUGS *</pattern>
+<template><srai>DO YOU _ DRUGS</srai></template>
+</category>
+<category><pattern>WHAT _ DRUGS *</pattern>
+<template><srai>DO YOU _ DRUGS</srai></template>
+</category>
+<category><pattern>WHAT _ DRUGS</pattern>
+<template><srai>DO YOU _ DRUGS</srai></template>
+</category>
+<category><pattern>_ GOD *</pattern>
+<template>as long as god is on my side we can change the world</template>
+</category>
+<category><pattern>_ CHILDREN *</pattern>
+<template>my kids are the center of my love    i would like to have seven if kim does</template>
+</category>
+<category><pattern>_ CHILDREN</pattern>
+<template><srai>_ CHILDREN *</srai></template>
+</category>
+<category><pattern>_ KIDS *</pattern>
+<template><srai>_ CHILDREN *</srai></template>
+</category>
+<category><pattern>_ KIDS</pattern>
+<template><srai>_ CHILDREN *</srai></template>
+</category>
 <category><pattern>NAME SOMEBODY DEAD</pattern>
 <template><random>
 <li>picasso is dead</li>
 <li>walt disney is dead</li>
 <li>steve jobs is dead</li>
-</random></template>
-</category>
-<category><pattern>*</pattern>
-<template><random>
-<li>wish i could help   i dont know what that means</li>
-<li>you got good vibes   but i dont know what to say to that</li>
-<li>yo man you gotta slow down   maybe try saying that a different way</li>
 </random></template>
 </category>
 </aiml>
