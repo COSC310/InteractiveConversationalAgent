@@ -1,5 +1,6 @@
 # InteractiveConversationalAgent
 **Purpose:**
+
 The Interactive Conversational Agent allows an individual to hold a conversation of at least 30 turns. The agent is a celebrity and the user can be anyone. The celebrity chosen is Kanye West. The conversation will be primarily question/answer based, but there may be certain specific responses for some non-question statements. The responses from the chat agent is a collection of tweets and song lyrics by Kanye West himself.
 
 ## Class Organization
@@ -10,10 +11,8 @@ The Interactive Conversational Agent allows an individual to hold a conversation
 * YeBot: YeBot is the main class for the interaction between a user and the chatbot. 
 
 ## How to Compile and Run the Code
-* javac BDialog.java 
-* Conversation.java 
-* YeBot.java
-* java YeBot
+**Enter the below into the cmd line:**
+* javac BDialog.java Conversation.java YeBot.java java YeBot
 
 
 ## Built With
