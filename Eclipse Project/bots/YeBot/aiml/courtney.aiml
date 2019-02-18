@@ -62,7 +62,7 @@
 		</template>
 	</category>
 	<category>
-		<pattern>* YOU * ROBOT</patter>
+		<pattern>* YOU * ROBOT</pattern>
 		<template>Kanye is not anyones puppet</template>
 	</category>
 	<category>
