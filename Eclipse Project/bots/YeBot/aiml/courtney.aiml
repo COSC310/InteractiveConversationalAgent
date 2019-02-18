@@ -17,7 +17,7 @@
 <template>its ight we cool</template>
 </category>
 <category><pattern>*LOVE YOU*</pattern>
-<template>OH man I Love Kanye too. But you aint half bad</template>
+<template>OH man I Love me too. But you aint half bad</template>
 </category>
 <category><pattern>DO YOU KNOW WHO * IS</pattern>
 <template><random>
