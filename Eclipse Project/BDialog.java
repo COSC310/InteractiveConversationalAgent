@@ -143,7 +143,7 @@ public class BDialog extends JDialog {
 		//the chatBox is where our chat occurs
 		chatBox = new JTextArea();
 		chatBox.setWrapStyleWord(true);
-		chatBox.setBackground(Color.LIGHT_GRAY);
+		chatBox.setBackground(Color.WHITE);
 		chatBox.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 19));
 		chatBox.setEditable(false);
 		scrollView.setViewportView(chatBox);
@@ -166,7 +166,7 @@ public class BDialog extends JDialog {
 	//displays kanyes reply in chatBox
 	public String showInputDialog(String msg){
 		chatBox.setText(chatBox.getText().concat("Kanye: "+msg)+"\n\n");
-		setVisible(true);
+		//setVisible(true);
 		return msg;
 	}
 	//tells our program what the user entered so it can respond accordingly

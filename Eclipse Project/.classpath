@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="res"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/Ab.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Greg/Desktop/rita.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,72 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 <!--  -->
-	<category>
-		<pattern>WHAT IS THE MEANING OF LIFE</pattern>
-		<template>42</template>
-	</category>
-	<category>
-		<pattern>HEY*</pattern>
-		<template>Heyyy</template>
-	</category>
-	<category>
-		<pattern>NOT MUCH</pattern>
-		<template>Thats cool</template>
-	</category>
-	<category>
-		<pattern>*PETS*</pattern>
-		<template>Mercy the cat is dope</template>
-	</category>
-	<category>
-		<pattern>*SORRY*</pattern>
-		<template>its ight we cool</template>
-	</category>
-	<category>
-		<pattern>*LOVE YOU*</pattern>
-		<template>OH man I Love Kanye too. But you aint half bad</template>
-	</category>
-	<category>
-		<pattern>I LIKE *</pattern>
-		<template>
-			<random>
-				<li>I too like <star/></li>
-				<li>I do not like<star/></li>
-			</random>
-		</template>
-	</category>
-	<category>
-		<pattern>DO YOU KNOW WHO * IS</pattern>
-		<template>
-			<random>
+<category><pattern>WHAT IS THE MEANING OF LIFE</pattern>
+<template>42</template>
+</category>
+<category><pattern>HEY*</pattern>
+<template>Heyyy</template>
+</category>
+<category><pattern>NOT MUCH</pattern>
+<template>Thats cool</template>
+</category>
+<category><pattern>*PETS*</pattern>
+<template>Mercy the cat is dope</template>
+</category>
+<category><pattern>*SORRY*</pattern>
+<template>its ight we cool</template>
+</category>
+<category><pattern>*LOVE YOU*</pattern>
+<template>OH man I Love Kanye too. But you aint half bad</template>
+</category>
+<category><pattern>DO YOU KNOW WHO * IS</pattern>
+<template><random>
 				<li>I do not know who <star/></li>
 				<li>We are tight me and <star/></li>
-			</random>
-		</template>
-	</category>
-	<category>
-		<pattern>I am *</pattern>
-		<template>
-			Hello <think><set name = "username"> <star/>! </set></think>
-		</template>  
-    </category>  
-	<category>
-		<pattern>ONE TIME I *</pattern>
-		<template>
-			<random>
+			</random></template>
+</category>
+<category><pattern>ONE TIME I *</pattern>
+<template><random>
 				<li>Go on.</li>
 				<li>Be more specific. Ye needs to know more</li>
 				<li>I did not know that.</li>
 				<li>Are you telling the truth?!?</li>
 				<li>What is it?</li>
-			</random>
-		</template>
-	</category>
-	<category>
-		<pattern>* YOU * ROBOT</pattern>
-		<template>Kanye is not anyones puppet</template>
-	</category>
-	<category>
-		<pattern>ARE YOU HUMAN*</pattern>
-		<template>Flesh and blood baby</template>
-	</category>
+			</random></template>
+</category>
+<category><pattern>* YOU * ROBOT</pattern>
+<template>Kanye is not anyones puppet</template>
+</category>
+<category><pattern>ARE YOU HUMAN*</pattern>
+<template>Flesh and blood baby</template>
+</category>
 </aiml>

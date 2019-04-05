@@ -19,6 +19,9 @@
 <category><pattern>WHAT ARE YOUR FAVOURITE KIND OF KICKS</pattern>
 <template>Yeezus likes yeezys</template>
 </category>
+<category><pattern>QUIT</pattern>
+<template>cya 'round</template>
+</category>
 <category><pattern>SUP</pattern>
 <template>wassup</template>
 </category>

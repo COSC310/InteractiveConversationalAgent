@@ -13,11 +13,6 @@
 <category><pattern>GOOD *</pattern>
 <template><srai>GOOD</srai></template>
 </category>
-<category><pattern>GOOD</pattern>
-<template><condition name="username">
-<li value="unknown">THAT IS GREAT</li>
-<li>THAT IS GREAT <get name="username"/></li></condition></template>
-</category>
 <category><pattern>WHO AM I *</pattern>
 <template><srai>WHAT IS MY NAME *</srai></template>
 </category>
